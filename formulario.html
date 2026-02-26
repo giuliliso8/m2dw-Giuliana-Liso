@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Historia Clínica - Clínica Dental</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+        }
+
+        header{
+            text-align: center;
+        }
+
+        main{
+            display: grid;
+            justify-content: center;
+            width: 100%;
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+            width: 350px;
+        }
+
+        label{
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        input, select{
+            margin-top: 5px;
+            padding: 5px;
+        }
+
+        .radio-group{
+            margin-top: 5px;
+        }
+
+        .botones{
+            margin-top: 15px;
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <img src="https://eliseovega.github.io/imgh/dental_clinic.svg" width="100">
+    <h1>HISTORIA CLÍNICA</h1>
+</header>
+
+<main>
+    <h2>DATOS DEL PACIENTE</h2>
+
+    <form>
+
+        <!-- DNI -->
+        <label for="inDNI">DNI</label>
+        <input type="text" id="inDNI" name="dni" required>
+
+        <!-- Foto -->
+        <label for="inFoto">Foto</label>
+        <input type="file" id="inFoto" name="foto">
+
+        <!-- Nombres -->
+        <label for="inNombres">Nombres</label>
+        <input type="text" id="inNombres" name="nombres" required>
+
+        <!-- Apellidos -->
+        <label for="inApellidos">Apellidos</label>
+        <input type="text" id="inApellidos" name="apellidos" required>
+
+        <!-- Fecha de nacimiento -->
+        <label for="inFechaNacimiento">Fecha de nacimiento</label>
+        <input type="date" id="inFechaNacimiento" name="fechaNacimiento">
+
+        <!-- Sexo -->
+        <label>Sexo</label>
+        <div class="radio-group">
+            <input type="radio" name="sexo" value="Masculino"> Masculino
+            <input type="radio" name="sexo" value="Femenino"> Femenino
+        </div>
+
+          <!-- Nombre del Representante -->
+        <label for="inNombre del Representante">Nombre del Representante</label>
+        <input type="text" id="inNombre del Representante" name="Nombre del Representante" required>
+            
+        </div>
+
+         <!-- Nombre del Representante -->
+        <label for="inNombre del Representante">Nombre del Representante</label>
+        <input type="text" id="inNombre del Representante" name="Nombre del Representante" required>
+        <!-- Teléfono -->
+        <label for="inTelefono">Teléfono</label>
+        <input type="tel" id="inTelefono" name="telefono">
+
+        <!-- Correo -->
+        <label for="inEmail">Correo Electrónico</label>
+        <input type="email" id="inEmail" name="email">
+
+        <!-- Sala -->
+        <label for="inSala">Sala</label>
+        <select id="inSala" name="sala">
+            <option>Emergencia</option>
+            <option>Sala A</option>
+            <option>Laboratorio</option>
+            <option>Rayos X</option>
+            <option>Hospitalización</option>
+        </select>
+
+        <!-- País -->
+        <label for="inPais">País</label>
+        <select id="inPais" name="pais">
+            <option>Colombia</option>
+            <option>Venezuela</option>
+            <option>Ecuador</option>
+            <option>Perú</option>
+            <option>Panamá</option>
+            <option>Brasil</option>
+        </select>
+
+          <!-- Departamento -->
+        <label for="inDepartamento">Departamento</label>
+        <input type="text" id="inDepartamento" name="Departamento" required>
+
+         <!-- provincia -->
+        <label for="inprovincia">provincia</label>
+        <input type="text" id="inprovincia" name="provincia" required>
+
+        <!-- distrito -->
+        <label for="indistro">distrito</label>
+        <input type="text" id="indistrito" name="distrito" required>
+
+        <!-- Estado Civil -->
+        <label for="inEstadoCivil">Estado Civil</label>
+        <select id="inEstadoCivil" name="estadoCivil">
+            <option>Soltero</option>
+            <option>Casado</option>
+            <option>Viudo</option>
+            <option>Unión Libre</option>
+            <option>Separado</option>
+            <option>Divorciado</option>
+        </select>
+
+        <!-- Grupo Sanguíneo -->
+        <label for="inGrupo">Grupo Sanguíneo</label>
+        <select id="inGrupo" name="grupo">
+            <option>A+</option>
+            <option>A-</option>
+            <option>B+</option>
+            <option>B-</option>
+            <option>AB+</option>
+            <option>AB-</option>
+            <option>O+</option>
+            <option>O-</option>
+        </select>
+
+        <!-- VIH -->
+        <label>VIH</label>
+        <div class="radio-group">
+            <input type="radio" name="vih" value="Si"> Sí
+            <input type="radio" name="vih" value="No"> No
+        </div>
+
+        <!-- Observaciones -->
+        <label for="inObs">Observaciones</label>
+        <textarea id="inObs" name="observaciones" rows="4"></textarea>
+
+        <!-- Botones -->
+        <div class="botones">
+            <input type="submit" value="Guardar">
+            <input type="reset" value="Borrar y No guardar">
+        </div>
+
+    </form>
+</main>
+
+</body>
+</html>
